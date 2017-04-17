@@ -6,15 +6,32 @@
  */
 
 require('./bootstrap');
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+import Vuex from 'vuex'
+Vue.use(Vuex)
+const store = new Vuex.Store({
+    state: {
+        count: 0
+    },
+    mutations: {
+        increment: state => {
+            state.count++
+        },
+        cut: state => {
+            state.count--
+        }
+    }
+})
+
+import App from './App.vue'
 
 const app = new Vue({
-    el: '#app'
+    store,
+    el: '#app',
+    render: h=>h(App)
 });

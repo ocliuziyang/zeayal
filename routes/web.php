@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
-    return view('admin.index');
+Route::group(['prefix' => 'dashboard', 'namespace' => 'Admin'], function () {
+
+    Route::get('login', 'Auth\LoginController@getLogin')->name('admin.login');
+    Route::post('login', 'Auth\LoginController@postLogin')->name('admin.login');
+    Route::get('logout', 'Auth\LoginController@logout');
+
+
+    Route::get('/', 'HomeController@index');
 });

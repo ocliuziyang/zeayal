@@ -17,6 +17,12 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
+
+        // 判断是否为管理员登陆,管理员退出后返回后台登陆页面
+        if (Auth::user() && Auth::user()->is_admin) {
+            return redirect('/dashboard');
+        }
+
         if (Auth::guard($guard)->check()) {
             return redirect('/home');
         }

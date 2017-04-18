@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 42);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11270,7 +11270,7 @@ module.exports = g;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
 
@@ -12321,7 +12321,7 @@ __webpack_require__(33);
  * and simple, leaving you to focus on building your next great project.
  */
 
-window.Vue = __webpack_require__(40);
+window.Vue = __webpack_require__(42);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -31839,7 +31839,7 @@ if (typeof jQuery === 'undefined') {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(41)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(44)(module)))
 
 /***/ }),
 /* 36 */
@@ -31849,7 +31849,7 @@ var Component = __webpack_require__(3)(
   /* script */
   __webpack_require__(31),
   /* template */
-  __webpack_require__(39),
+  __webpack_require__(40),
   /* scopeId */
   null,
   /* cssModules */
@@ -31883,7 +31883,7 @@ var Component = __webpack_require__(3)(
   /* script */
   null,
   /* template */
-  __webpack_require__(57),
+  __webpack_require__(41),
   /* scopeId */
   null,
   /* cssModules */
@@ -31917,7 +31917,7 @@ var Component = __webpack_require__(3)(
   /* script */
   null,
   /* template */
-  __webpack_require__(56),
+  __webpack_require__(39),
   /* scopeId */
   null,
   /* cssModules */
@@ -31945,6 +31945,276 @@ module.exports = Component.exports
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "main_menu_side hidden-print main_menu",
+    attrs: {
+      "id": "sidebar-menu"
+    }
+  }, [_c('div', {
+    staticClass: "menu_section"
+  }, [_c('h3', [_vm._v("General")]), _vm._v(" "), _c('ul', {
+    staticClass: "nav side-menu"
+  }, [_c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-home"
+  }), _vm._v(" Dashboard "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "index.html"
+    }
+  }, [_vm._v("Dashboard")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "index2.html"
+    }
+  }, [_vm._v("Dashboard2")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "index3.html"
+    }
+  }, [_vm._v("Dashboard3")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-edit"
+  }), _vm._v(" Forms "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "form.html"
+    }
+  }, [_vm._v("General Form")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "form_advanced.html"
+    }
+  }, [_vm._v("Advanced Components")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "form_validation.html"
+    }
+  }, [_vm._v("Form Validation")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "form_wizards.html"
+    }
+  }, [_vm._v("Form Wizard")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "form_upload.html"
+    }
+  }, [_vm._v("Form Upload")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "form_buttons.html"
+    }
+  }, [_vm._v("Form Buttons")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-desktop"
+  }), _vm._v(" UI Elements "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "general_elements.html"
+    }
+  }, [_vm._v("General Elements")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "media_gallery.html"
+    }
+  }, [_vm._v("Media Gallery")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "typography.html"
+    }
+  }, [_vm._v("Typography")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "icons.html"
+    }
+  }, [_vm._v("Icons")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "glyphicons.html"
+    }
+  }, [_vm._v("Glyphicons")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "widgets.html"
+    }
+  }, [_vm._v("Widgets")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "invoice.html"
+    }
+  }, [_vm._v("Invoice")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "inbox.html"
+    }
+  }, [_vm._v("Inbox")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "calendar.html"
+    }
+  }, [_vm._v("Calendar")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-table"
+  }), _vm._v(" Tables "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "tables.html"
+    }
+  }, [_vm._v("Tables")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "tables_dynamic.html"
+    }
+  }, [_vm._v("Table Dynamic")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-bar-chart-o"
+  }), _vm._v(" Data Presentation "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "chartjs.html"
+    }
+  }, [_vm._v("Chart JS")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "chartjs2.html"
+    }
+  }, [_vm._v("Chart JS2")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "morisjs.html"
+    }
+  }, [_vm._v("Moris JS")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "echarts.html"
+    }
+  }, [_vm._v("ECharts")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "other_charts.html"
+    }
+  }, [_vm._v("Other Charts")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-clone"
+  }), _vm._v("Layouts "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "fixed_sidebar.html"
+    }
+  }, [_vm._v("Fixed Sidebar")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "fixed_footer.html"
+    }
+  }, [_vm._v("Fixed Footer")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "menu_section"
+  }, [_c('h3', [_vm._v("Live On")]), _vm._v(" "), _c('ul', {
+    staticClass: "nav side-menu"
+  }, [_c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-bug"
+  }), _vm._v(" Additional Pages "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "e_commerce.html"
+    }
+  }, [_vm._v("E-commerce")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "projects.html"
+    }
+  }, [_vm._v("Projects")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "project_detail.html"
+    }
+  }, [_vm._v("Project Detail")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "contacts.html"
+    }
+  }, [_vm._v("Contacts")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "profile.html"
+    }
+  }, [_vm._v("Profile")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-windows"
+  }), _vm._v(" Extras "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "page_403.html"
+    }
+  }, [_vm._v("403 Error")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "page_404.html"
+    }
+  }, [_vm._v("404 Error")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "page_500.html"
+    }
+  }, [_vm._v("500 Error")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "plain_page.html"
+    }
+  }, [_vm._v("Plain Page")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "login.html"
+    }
+  }, [_vm._v("Login Page")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "pricing_tables.html"
+    }
+  }, [_vm._v("Pricing Tables")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
+    staticClass: "fa fa-sitemap"
+  }), _vm._v(" Multilevel Menu "), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "#level1_1"
+    }
+  }, [_vm._v("Level One")])]), _c('li', [_c('a', [_vm._v("Level One"), _c('span', {
+    staticClass: "fa fa-chevron-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "nav child_menu"
+  }, [_c('li', {
+    staticClass: "sub_menu"
+  }, [_c('a', {
+    attrs: {
+      "href": "level2.html"
+    }
+  }, [_vm._v("Level Two")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "#level2_1"
+    }
+  }, [_vm._v("Level Two")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "#level2_2"
+    }
+  }, [_vm._v("Level Two")])])])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "#level1_2"
+    }
+  }, [_vm._v("Level One")])])])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-laptop"
+  }), _vm._v(" Landing Page "), _c('span', {
+    staticClass: "label label-success pull-right"
+  }, [_vm._v("Coming Soon")])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1f6c7064", module.exports)
+  }
+}
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32121,7 +32391,148 @@ if (false) {
 }
 
 /***/ }),
-/* 40 */
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "top_nav"
+  }, [_c('div', {
+    staticClass: "nav_menu"
+  }, [_c('nav', {
+    attrs: {
+      "role": "navigation"
+    }
+  }, [_c('div', {
+    staticClass: "nav toggle"
+  }, [_c('a', {
+    attrs: {
+      "id": "menu_toggle"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-bars"
+  })])]), _vm._v(" "), _c('ul', {
+    staticClass: "nav navbar-nav navbar-right"
+  }, [_c('li', {}, [_c('a', {
+    staticClass: "user-profile dropdown-toggle",
+    attrs: {
+      "href": "javascript:;",
+      "data-toggle": "dropdown",
+      "aria-expanded": "false"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "images/img.jpg",
+      "alt": ""
+    }
+  }), _vm._v("John Doe\n                        "), _c('span', {
+    staticClass: " fa fa-angle-down"
+  })]), _vm._v(" "), _c('ul', {
+    staticClass: "dropdown-menu dropdown-usermenu pull-right"
+  }, [_c('li', [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_vm._v(" Profile")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('span', {
+    staticClass: "badge bg-red pull-right"
+  }, [_vm._v("50%")]), _vm._v(" "), _c('span', [_vm._v("Settings")])])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_vm._v("Help")])]), _vm._v(" "), _c('li', [_c('a', {
+    attrs: {
+      "href": "/dashboard/logout"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-sign-out pull-right"
+  }), _vm._v(" Log Out")])])])]), _vm._v(" "), _c('li', {
+    staticClass: "dropdown",
+    attrs: {
+      "role": "presentation"
+    }
+  }, [_c('a', {
+    staticClass: "dropdown-toggle info-number",
+    attrs: {
+      "href": "javascript:;",
+      "data-toggle": "dropdown",
+      "aria-expanded": "false"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-envelope-o"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "badge bg-green"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('ul', {
+    staticClass: "dropdown-menu list-unstyled msg_list",
+    attrs: {
+      "id": "menu1",
+      "role": "menu"
+    }
+  }, [_c('li', [_c('a', [_c('span', {
+    staticClass: "image"
+  }, [_c('img', {
+    attrs: {
+      "src": "images/img.jpg",
+      "alt": "Profile Image"
+    }
+  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
+    staticClass: "time"
+  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
+    staticClass: "message"
+  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
+    staticClass: "image"
+  }, [_c('img', {
+    attrs: {
+      "src": "images/img.jpg",
+      "alt": "Profile Image"
+    }
+  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
+    staticClass: "time"
+  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
+    staticClass: "message"
+  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
+    staticClass: "image"
+  }, [_c('img', {
+    attrs: {
+      "src": "images/img.jpg",
+      "alt": "Profile Image"
+    }
+  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
+    staticClass: "time"
+  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
+    staticClass: "message"
+  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
+    staticClass: "image"
+  }, [_c('img', {
+    attrs: {
+      "src": "images/img.jpg",
+      "alt": "Profile Image"
+    }
+  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
+    staticClass: "time"
+  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
+    staticClass: "message"
+  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('div', {
+    staticClass: "text-center"
+  }, [_c('a', [_c('strong', [_vm._v("See All Alerts")]), _vm._v(" "), _c('i', {
+    staticClass: "fa fa-angle-right"
+  })])])])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-dbfa8f90", module.exports)
+  }
+}
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41449,467 +41860,7 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(10)))
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-module.exports = function(module) {
-	if(!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(11);
-module.exports = __webpack_require__(12);
-
-
-/***/ }),
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "main_menu_side hidden-print main_menu",
-    attrs: {
-      "id": "sidebar-menu"
-    }
-  }, [_c('div', {
-    staticClass: "menu_section"
-  }, [_c('h3', [_vm._v("General")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav side-menu"
-  }, [_c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-home"
-  }), _vm._v(" Dashboard "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "index.html"
-    }
-  }, [_vm._v("Dashboard")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "index2.html"
-    }
-  }, [_vm._v("Dashboard2")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "index3.html"
-    }
-  }, [_vm._v("Dashboard3")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-edit"
-  }), _vm._v(" Forms "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "form.html"
-    }
-  }, [_vm._v("General Form")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "form_advanced.html"
-    }
-  }, [_vm._v("Advanced Components")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "form_validation.html"
-    }
-  }, [_vm._v("Form Validation")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "form_wizards.html"
-    }
-  }, [_vm._v("Form Wizard")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "form_upload.html"
-    }
-  }, [_vm._v("Form Upload")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "form_buttons.html"
-    }
-  }, [_vm._v("Form Buttons")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-desktop"
-  }), _vm._v(" UI Elements "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "general_elements.html"
-    }
-  }, [_vm._v("General Elements")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "media_gallery.html"
-    }
-  }, [_vm._v("Media Gallery")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "typography.html"
-    }
-  }, [_vm._v("Typography")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "icons.html"
-    }
-  }, [_vm._v("Icons")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "glyphicons.html"
-    }
-  }, [_vm._v("Glyphicons")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "widgets.html"
-    }
-  }, [_vm._v("Widgets")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "invoice.html"
-    }
-  }, [_vm._v("Invoice")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "inbox.html"
-    }
-  }, [_vm._v("Inbox")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "calendar.html"
-    }
-  }, [_vm._v("Calendar")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-table"
-  }), _vm._v(" Tables "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "tables.html"
-    }
-  }, [_vm._v("Tables")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "tables_dynamic.html"
-    }
-  }, [_vm._v("Table Dynamic")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-bar-chart-o"
-  }), _vm._v(" Data Presentation "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "chartjs.html"
-    }
-  }, [_vm._v("Chart JS")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "chartjs2.html"
-    }
-  }, [_vm._v("Chart JS2")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "morisjs.html"
-    }
-  }, [_vm._v("Moris JS")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "echarts.html"
-    }
-  }, [_vm._v("ECharts")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "other_charts.html"
-    }
-  }, [_vm._v("Other Charts")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-clone"
-  }), _vm._v("Layouts "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "fixed_sidebar.html"
-    }
-  }, [_vm._v("Fixed Sidebar")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "fixed_footer.html"
-    }
-  }, [_vm._v("Fixed Footer")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "menu_section"
-  }, [_c('h3', [_vm._v("Live On")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav side-menu"
-  }, [_c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-bug"
-  }), _vm._v(" Additional Pages "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "e_commerce.html"
-    }
-  }, [_vm._v("E-commerce")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "projects.html"
-    }
-  }, [_vm._v("Projects")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "project_detail.html"
-    }
-  }, [_vm._v("Project Detail")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "contacts.html"
-    }
-  }, [_vm._v("Contacts")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "profile.html"
-    }
-  }, [_vm._v("Profile")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-windows"
-  }), _vm._v(" Extras "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "page_403.html"
-    }
-  }, [_vm._v("403 Error")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "page_404.html"
-    }
-  }, [_vm._v("404 Error")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "page_500.html"
-    }
-  }, [_vm._v("500 Error")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "plain_page.html"
-    }
-  }, [_vm._v("Plain Page")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "login.html"
-    }
-  }, [_vm._v("Login Page")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "pricing_tables.html"
-    }
-  }, [_vm._v("Pricing Tables")])])])]), _vm._v(" "), _c('li', [_c('a', [_c('i', {
-    staticClass: "fa fa-sitemap"
-  }), _vm._v(" Multilevel Menu "), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "#level1_1"
-    }
-  }, [_vm._v("Level One")])]), _c('li', [_c('a', [_vm._v("Level One"), _c('span', {
-    staticClass: "fa fa-chevron-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "nav child_menu"
-  }, [_c('li', {
-    staticClass: "sub_menu"
-  }, [_c('a', {
-    attrs: {
-      "href": "level2.html"
-    }
-  }, [_vm._v("Level Two")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "#level2_1"
-    }
-  }, [_vm._v("Level Two")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "#level2_2"
-    }
-  }, [_vm._v("Level Two")])])])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "#level1_2"
-    }
-  }, [_vm._v("Level One")])])])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "javascript:void(0)"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-laptop"
-  }), _vm._v(" Landing Page "), _c('span', {
-    staticClass: "label label-success pull-right"
-  }, [_vm._v("Coming Soon")])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-1f6c7064", module.exports)
-  }
-}
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "top_nav"
-  }, [_c('div', {
-    staticClass: "nav_menu"
-  }, [_c('nav', {
-    attrs: {
-      "role": "navigation"
-    }
-  }, [_c('div', {
-    staticClass: "nav toggle"
-  }, [_c('a', {
-    attrs: {
-      "id": "menu_toggle"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-bars"
-  })])]), _vm._v(" "), _c('ul', {
-    staticClass: "nav navbar-nav navbar-right"
-  }, [_c('li', {}, [_c('a', {
-    staticClass: "user-profile dropdown-toggle",
-    attrs: {
-      "href": "javascript:;",
-      "data-toggle": "dropdown",
-      "aria-expanded": "false"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": "images/img.jpg",
-      "alt": ""
-    }
-  }), _vm._v("John Doe\n                        "), _c('span', {
-    staticClass: " fa fa-angle-down"
-  })]), _vm._v(" "), _c('ul', {
-    staticClass: "dropdown-menu dropdown-usermenu pull-right"
-  }, [_c('li', [_c('a', {
-    attrs: {
-      "href": "javascript:;"
-    }
-  }, [_vm._v(" Profile")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "javascript:;"
-    }
-  }, [_c('span', {
-    staticClass: "badge bg-red pull-right"
-  }, [_vm._v("50%")]), _vm._v(" "), _c('span', [_vm._v("Settings")])])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "javascript:;"
-    }
-  }, [_vm._v("Help")])]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
-      "href": "login.html"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-sign-out pull-right"
-  }), _vm._v(" Log Out")])])])]), _vm._v(" "), _c('li', {
-    staticClass: "dropdown",
-    attrs: {
-      "role": "presentation"
-    }
-  }, [_c('a', {
-    staticClass: "dropdown-toggle info-number",
-    attrs: {
-      "href": "javascript:;",
-      "data-toggle": "dropdown",
-      "aria-expanded": "false"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-envelope-o"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "badge bg-green"
-  }, [_vm._v("6")])]), _vm._v(" "), _c('ul', {
-    staticClass: "dropdown-menu list-unstyled msg_list",
-    attrs: {
-      "id": "menu1",
-      "role": "menu"
-    }
-  }, [_c('li', [_c('a', [_c('span', {
-    staticClass: "image"
-  }, [_c('img', {
-    attrs: {
-      "src": "images/img.jpg",
-      "alt": "Profile Image"
-    }
-  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
-    staticClass: "time"
-  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
-    staticClass: "message"
-  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
-    staticClass: "image"
-  }, [_c('img', {
-    attrs: {
-      "src": "images/img.jpg",
-      "alt": "Profile Image"
-    }
-  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
-    staticClass: "time"
-  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
-    staticClass: "message"
-  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
-    staticClass: "image"
-  }, [_c('img', {
-    attrs: {
-      "src": "images/img.jpg",
-      "alt": "Profile Image"
-    }
-  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
-    staticClass: "time"
-  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
-    staticClass: "message"
-  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('a', [_c('span', {
-    staticClass: "image"
-  }, [_c('img', {
-    attrs: {
-      "src": "images/img.jpg",
-      "alt": "Profile Image"
-    }
-  })]), _vm._v(" "), _c('span', [_c('span', [_vm._v("John Smith")]), _vm._v(" "), _c('span', {
-    staticClass: "time"
-  }, [_vm._v("3 mins ago")])]), _vm._v(" "), _c('span', {
-    staticClass: "message"
-  }, [_vm._v("\n                      Film festivals used to be do-or-die moments for movie makers. They were where...\n                    ")])])]), _vm._v(" "), _c('li', [_c('div', {
-    staticClass: "text-center"
-  }, [_c('a', [_c('strong', [_vm._v("See All Alerts")]), _vm._v(" "), _c('i', {
-    staticClass: "fa fa-angle-right"
-  })])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-dbfa8f90", module.exports)
-  }
-}
-
-/***/ }),
-/* 58 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42721,6 +42672,1360 @@ var index_esm = {
 /* harmony default export */ __webpack_exports__["a"] = (index_esm);
 
 
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if(!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(11);
+module.exports = __webpack_require__(12);
+
+
 /***/ })
 /******/ ]);
 function countChecked(){"all"===checkState&&$(".bulk_action input[name='table_records']").iCheck("check"),"none"===checkState&&$(".bulk_action input[name='table_records']").iCheck("uncheck");var e=$(".bulk_action input[name='table_records']:checked").length;e?($(".column-title").hide(),$(".bulk-actions").show(),$(".action-cnt").html(e+" Records Selected")):($(".column-title").show(),$(".bulk-actions").hide())}var CURRENT_URL=window.location.href.split("?")[0],$BODY=$("body"),$MENU_TOGGLE=$("#menu_toggle"),$SIDEBAR_MENU=$("#sidebar-menu"),$SIDEBAR_FOOTER=$(".sidebar-footer"),$LEFT_COL=$(".left_col"),$RIGHT_COL=$(".right_col"),$NAV_MENU=$(".nav_menu"),$FOOTER=$("footer");$(document).ready(function(){var e=function(){$RIGHT_COL.css("min-height",$(window).height());var e=$BODY.outerHeight(),t=$BODY.hasClass("footer_fixed")?0:$FOOTER.height(),n=$LEFT_COL.eq(1).height()+$SIDEBAR_FOOTER.height(),i=n>e?n:e;i-=$NAV_MENU.height()+t,$RIGHT_COL.css("min-height",i)};$SIDEBAR_MENU.find("a").on("click",function(t){var n=$(this).parent();n.is(".active")?(n.removeClass("active active-sm"),$("ul:first",n).slideUp(function(){e()})):(n.parent().is(".child_menu")||($SIDEBAR_MENU.find("li").removeClass("active active-sm"),$SIDEBAR_MENU.find("li ul").slideUp()),n.addClass("active"),$("ul:first",n).slideDown(function(){e()}))}),$MENU_TOGGLE.on("click",function(){$BODY.hasClass("nav-md")?($SIDEBAR_MENU.find("li.active ul").hide(),$SIDEBAR_MENU.find("li.active").addClass("active-sm").removeClass("active")):($SIDEBAR_MENU.find("li.active-sm ul").show(),$SIDEBAR_MENU.find("li.active-sm").addClass("active").removeClass("active-sm")),$BODY.toggleClass("nav-md nav-sm"),e()}),$SIDEBAR_MENU.find('a[href="'+CURRENT_URL+'"]').parent("li").addClass("current-page"),$SIDEBAR_MENU.find("a").filter(function(){return this.href==CURRENT_URL}).parent("li").addClass("current-page").parents("ul").slideDown(function(){e()}).parent().addClass("active"),$(window).smartresize(function(){e()}),e(),$.fn.mCustomScrollbar&&$(".menu_fixed").mCustomScrollbar({autoHideScrollbar:!0,theme:"minimal",mouseWheel:{preventDefault:!0}})}),$(document).ready(function(){$(".collapse-link").on("click",function(){var e=$(this).closest(".x_panel"),t=$(this).find("i"),n=e.find(".x_content");e.attr("style")?n.slideToggle(200,function(){e.removeAttr("style")}):(n.slideToggle(200),e.css("height","auto")),t.toggleClass("fa-chevron-up fa-chevron-down")}),$(".close-link").click(function(){var e=$(this).closest(".x_panel");e.remove()})}),$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip({container:"body"})}),$(".progress .progress-bar")[0]&&$(".progress .progress-bar").progressbar(),$(document).ready(function(){if($(".js-switch")[0]){var e=Array.prototype.slice.call(document.querySelectorAll(".js-switch"));e.forEach(function(e){new Switchery(e,{color:"#26B99A"})})}}),$(document).ready(function(){$("input.flat")[0]&&$(document).ready(function(){$("input.flat").iCheck({checkboxClass:"icheckbox_flat-green",radioClass:"iradio_flat-green"})})}),$("table input").on("ifChecked",function(){checkState="",$(this).parent().parent().parent().addClass("selected"),countChecked()}),$("table input").on("ifUnchecked",function(){checkState="",$(this).parent().parent().parent().removeClass("selected"),countChecked()});var checkState="";$(".bulk_action input").on("ifChecked",function(){checkState="",$(this).parent().parent().parent().addClass("selected"),countChecked()}),$(".bulk_action input").on("ifUnchecked",function(){checkState="",$(this).parent().parent().parent().removeClass("selected"),countChecked()}),$(".bulk_action input#check-all").on("ifChecked",function(){checkState="all",countChecked()}),$(".bulk_action input#check-all").on("ifUnchecked",function(){checkState="none",countChecked()}),$(document).ready(function(){$(".expand").on("click",function(){$(this).next().slideToggle(200),$expand=$(this).find(">:first-child"),"+"==$expand.text()?$expand.text("-"):$expand.text("+")})}),"undefined"!=typeof NProgress&&($(document).ready(function(){NProgress.start()}),$(window).load(function(){NProgress.done()})),function(e,t){var n=function(e,t,n){var i;return function(){function c(){n||e.apply(a,o),i=null}var a=this,o=arguments;i?clearTimeout(i):n&&e.apply(a,o),i=setTimeout(c,t||100)}};jQuery.fn[t]=function(e){return e?this.bind("resize",n(e)):this.trigger(t)}}(jQuery,"smartresize");
+;(function () {
+	'use strict';
+
+	/**
+	 * @preserve FastClick: polyfill to remove click delays on browsers with touch UIs.
+	 *
+	 * @codingstandard ftlabs-jsv2
+	 * @copyright The Financial Times Limited [All Rights Reserved]
+	 * @license MIT License (see LICENSE.txt)
+	 */
+
+	/*jslint browser:true, node:true*/
+	/*global define, Event, Node*/
+
+
+	/**
+	 * Instantiate fast-clicking listeners on the specified layer.
+	 *
+	 * @constructor
+	 * @param {Element} layer The layer to listen on
+	 * @param {Object} [options={}] The options to override the defaults
+	 */
+	function FastClick(layer, options) {
+		var oldOnClick;
+
+		options = options || {};
+
+		/**
+		 * Whether a click is currently being tracked.
+		 *
+		 * @type boolean
+		 */
+		this.trackingClick = false;
+
+
+		/**
+		 * Timestamp for when click tracking started.
+		 *
+		 * @type number
+		 */
+		this.trackingClickStart = 0;
+
+
+		/**
+		 * The element being tracked for a click.
+		 *
+		 * @type EventTarget
+		 */
+		this.targetElement = null;
+
+
+		/**
+		 * X-coordinate of touch start event.
+		 *
+		 * @type number
+		 */
+		this.touchStartX = 0;
+
+
+		/**
+		 * Y-coordinate of touch start event.
+		 *
+		 * @type number
+		 */
+		this.touchStartY = 0;
+
+
+		/**
+		 * ID of the last touch, retrieved from Touch.identifier.
+		 *
+		 * @type number
+		 */
+		this.lastTouchIdentifier = 0;
+
+
+		/**
+		 * Touchmove boundary, beyond which a click will be cancelled.
+		 *
+		 * @type number
+		 */
+		this.touchBoundary = options.touchBoundary || 10;
+
+
+		/**
+		 * The FastClick layer.
+		 *
+		 * @type Element
+		 */
+		this.layer = layer;
+
+		/**
+		 * The minimum time between tap(touchstart and touchend) events
+		 *
+		 * @type number
+		 */
+		this.tapDelay = options.tapDelay || 200;
+
+		/**
+		 * The maximum time for a tap
+		 *
+		 * @type number
+		 */
+		this.tapTimeout = options.tapTimeout || 700;
+
+		if (FastClick.notNeeded(layer)) {
+			return;
+		}
+
+		// Some old versions of Android don't have Function.prototype.bind
+		function bind(method, context) {
+			return function() { return method.apply(context, arguments); };
+		}
+
+
+		var methods = ['onMouse', 'onClick', 'onTouchStart', 'onTouchMove', 'onTouchEnd', 'onTouchCancel'];
+		var context = this;
+		for (var i = 0, l = methods.length; i < l; i++) {
+			context[methods[i]] = bind(context[methods[i]], context);
+		}
+
+		// Set up event handlers as required
+		if (deviceIsAndroid) {
+			layer.addEventListener('mouseover', this.onMouse, true);
+			layer.addEventListener('mousedown', this.onMouse, true);
+			layer.addEventListener('mouseup', this.onMouse, true);
+		}
+
+		layer.addEventListener('click', this.onClick, true);
+		layer.addEventListener('touchstart', this.onTouchStart, false);
+		layer.addEventListener('touchmove', this.onTouchMove, false);
+		layer.addEventListener('touchend', this.onTouchEnd, false);
+		layer.addEventListener('touchcancel', this.onTouchCancel, false);
+
+		// Hack is required for browsers that don't support Event#stopImmediatePropagation (e.g. Android 2)
+		// which is how FastClick normally stops click events bubbling to callbacks registered on the FastClick
+		// layer when they are cancelled.
+		if (!Event.prototype.stopImmediatePropagation) {
+			layer.removeEventListener = function(type, callback, capture) {
+				var rmv = Node.prototype.removeEventListener;
+				if (type === 'click') {
+					rmv.call(layer, type, callback.hijacked || callback, capture);
+				} else {
+					rmv.call(layer, type, callback, capture);
+				}
+			};
+
+			layer.addEventListener = function(type, callback, capture) {
+				var adv = Node.prototype.addEventListener;
+				if (type === 'click') {
+					adv.call(layer, type, callback.hijacked || (callback.hijacked = function(event) {
+						if (!event.propagationStopped) {
+							callback(event);
+						}
+					}), capture);
+				} else {
+					adv.call(layer, type, callback, capture);
+				}
+			};
+		}
+
+		// If a handler is already declared in the element's onclick attribute, it will be fired before
+		// FastClick's onClick handler. Fix this by pulling out the user-defined handler function and
+		// adding it as listener.
+		if (typeof layer.onclick === 'function') {
+
+			// Android browser on at least 3.2 requires a new reference to the function in layer.onclick
+			// - the old one won't work if passed to addEventListener directly.
+			oldOnClick = layer.onclick;
+			layer.addEventListener('click', function(event) {
+				oldOnClick(event);
+			}, false);
+			layer.onclick = null;
+		}
+	}
+
+	/**
+	* Windows Phone 8.1 fakes user agent string to look like Android and iPhone.
+	*
+	* @type boolean
+	*/
+	var deviceIsWindowsPhone = navigator.userAgent.indexOf("Windows Phone") >= 0;
+
+	/**
+	 * Android requires exceptions.
+	 *
+	 * @type boolean
+	 */
+	var deviceIsAndroid = navigator.userAgent.indexOf('Android') > 0 && !deviceIsWindowsPhone;
+
+
+	/**
+	 * iOS requires exceptions.
+	 *
+	 * @type boolean
+	 */
+	var deviceIsIOS = /iP(ad|hone|od)/.test(navigator.userAgent) && !deviceIsWindowsPhone;
+
+
+	/**
+	 * iOS 4 requires an exception for select elements.
+	 *
+	 * @type boolean
+	 */
+	var deviceIsIOS4 = deviceIsIOS && (/OS 4_\d(_\d)?/).test(navigator.userAgent);
+
+
+	/**
+	 * iOS 6.0-7.* requires the target element to be manually derived
+	 *
+	 * @type boolean
+	 */
+	var deviceIsIOSWithBadTarget = deviceIsIOS && (/OS [6-7]_\d/).test(navigator.userAgent);
+
+	/**
+	 * BlackBerry requires exceptions.
+	 *
+	 * @type boolean
+	 */
+	var deviceIsBlackBerry10 = navigator.userAgent.indexOf('BB10') > 0;
+
+	/**
+	 * Determine whether a given element requires a native click.
+	 *
+	 * @param {EventTarget|Element} target Target DOM element
+	 * @returns {boolean} Returns true if the element needs a native click
+	 */
+	FastClick.prototype.needsClick = function(target) {
+		switch (target.nodeName.toLowerCase()) {
+
+		// Don't send a synthetic click to disabled inputs (issue #62)
+		case 'button':
+		case 'select':
+		case 'textarea':
+			if (target.disabled) {
+				return true;
+			}
+
+			break;
+		case 'input':
+
+			// File inputs need real clicks on iOS 6 due to a browser bug (issue #68)
+			if ((deviceIsIOS && target.type === 'file') || target.disabled) {
+				return true;
+			}
+
+			break;
+		case 'label':
+		case 'iframe': // iOS8 homescreen apps can prevent events bubbling into frames
+		case 'video':
+			return true;
+		}
+
+		return (/\bneedsclick\b/).test(target.className);
+	};
+
+
+	/**
+	 * Determine whether a given element requires a call to focus to simulate click into element.
+	 *
+	 * @param {EventTarget|Element} target Target DOM element
+	 * @returns {boolean} Returns true if the element requires a call to focus to simulate native click.
+	 */
+	FastClick.prototype.needsFocus = function(target) {
+		switch (target.nodeName.toLowerCase()) {
+		case 'textarea':
+			return true;
+		case 'select':
+			return !deviceIsAndroid;
+		case 'input':
+			switch (target.type) {
+			case 'button':
+			case 'checkbox':
+			case 'file':
+			case 'image':
+			case 'radio':
+			case 'submit':
+				return false;
+			}
+
+			// No point in attempting to focus disabled inputs
+			return !target.disabled && !target.readOnly;
+		default:
+			return (/\bneedsfocus\b/).test(target.className);
+		}
+	};
+
+
+	/**
+	 * Send a click event to the specified element.
+	 *
+	 * @param {EventTarget|Element} targetElement
+	 * @param {Event} event
+	 */
+	FastClick.prototype.sendClick = function(targetElement, event) {
+		var clickEvent, touch;
+
+		// On some Android devices activeElement needs to be blurred otherwise the synthetic click will have no effect (#24)
+		if (document.activeElement && document.activeElement !== targetElement) {
+			document.activeElement.blur();
+		}
+
+		touch = event.changedTouches[0];
+
+		// Synthesise a click event, with an extra attribute so it can be tracked
+		clickEvent = document.createEvent('MouseEvents');
+		clickEvent.initMouseEvent(this.determineEventType(targetElement), true, true, window, 1, touch.screenX, touch.screenY, touch.clientX, touch.clientY, false, false, false, false, 0, null);
+		clickEvent.forwardedTouchEvent = true;
+		targetElement.dispatchEvent(clickEvent);
+	};
+
+	FastClick.prototype.determineEventType = function(targetElement) {
+
+		//Issue #159: Android Chrome Select Box does not open with a synthetic click event
+		if (deviceIsAndroid && targetElement.tagName.toLowerCase() === 'select') {
+			return 'mousedown';
+		}
+
+		return 'click';
+	};
+
+
+	/**
+	 * @param {EventTarget|Element} targetElement
+	 */
+	FastClick.prototype.focus = function(targetElement) {
+		var length;
+
+		// Issue #160: on iOS 7, some input elements (e.g. date datetime month) throw a vague TypeError on setSelectionRange. These elements don't have an integer value for the selectionStart and selectionEnd properties, but unfortunately that can't be used for detection because accessing the properties also throws a TypeError. Just check the type instead. Filed as Apple bug #15122724.
+		if (deviceIsIOS && targetElement.setSelectionRange && targetElement.type.indexOf('date') !== 0 && targetElement.type !== 'time' && targetElement.type !== 'month') {
+			length = targetElement.value.length;
+			targetElement.setSelectionRange(length, length);
+		} else {
+			targetElement.focus();
+		}
+	};
+
+
+	/**
+	 * Check whether the given target element is a child of a scrollable layer and if so, set a flag on it.
+	 *
+	 * @param {EventTarget|Element} targetElement
+	 */
+	FastClick.prototype.updateScrollParent = function(targetElement) {
+		var scrollParent, parentElement;
+
+		scrollParent = targetElement.fastClickScrollParent;
+
+		// Attempt to discover whether the target element is contained within a scrollable layer. Re-check if the
+		// target element was moved to another parent.
+		if (!scrollParent || !scrollParent.contains(targetElement)) {
+			parentElement = targetElement;
+			do {
+				if (parentElement.scrollHeight > parentElement.offsetHeight) {
+					scrollParent = parentElement;
+					targetElement.fastClickScrollParent = parentElement;
+					break;
+				}
+
+				parentElement = parentElement.parentElement;
+			} while (parentElement);
+		}
+
+		// Always update the scroll top tracker if possible.
+		if (scrollParent) {
+			scrollParent.fastClickLastScrollTop = scrollParent.scrollTop;
+		}
+	};
+
+
+	/**
+	 * @param {EventTarget} targetElement
+	 * @returns {Element|EventTarget}
+	 */
+	FastClick.prototype.getTargetElementFromEventTarget = function(eventTarget) {
+
+		// On some older browsers (notably Safari on iOS 4.1 - see issue #56) the event target may be a text node.
+		if (eventTarget.nodeType === Node.TEXT_NODE) {
+			return eventTarget.parentNode;
+		}
+
+		return eventTarget;
+	};
+
+
+	/**
+	 * On touch start, record the position and scroll offset.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.onTouchStart = function(event) {
+		var targetElement, touch, selection;
+
+		// Ignore multiple touches, otherwise pinch-to-zoom is prevented if both fingers are on the FastClick element (issue #111).
+		if (event.targetTouches.length > 1) {
+			return true;
+		}
+
+		targetElement = this.getTargetElementFromEventTarget(event.target);
+		touch = event.targetTouches[0];
+
+		if (deviceIsIOS) {
+
+			// Only trusted events will deselect text on iOS (issue #49)
+			selection = window.getSelection();
+			if (selection.rangeCount && !selection.isCollapsed) {
+				return true;
+			}
+
+			if (!deviceIsIOS4) {
+
+				// Weird things happen on iOS when an alert or confirm dialog is opened from a click event callback (issue #23):
+				// when the user next taps anywhere else on the page, new touchstart and touchend events are dispatched
+				// with the same identifier as the touch event that previously triggered the click that triggered the alert.
+				// Sadly, there is an issue on iOS 4 that causes some normal touch events to have the same identifier as an
+				// immediately preceeding touch event (issue #52), so this fix is unavailable on that platform.
+				// Issue 120: touch.identifier is 0 when Chrome dev tools 'Emulate touch events' is set with an iOS device UA string,
+				// which causes all touch events to be ignored. As this block only applies to iOS, and iOS identifiers are always long,
+				// random integers, it's safe to to continue if the identifier is 0 here.
+				if (touch.identifier && touch.identifier === this.lastTouchIdentifier) {
+					event.preventDefault();
+					return false;
+				}
+
+				this.lastTouchIdentifier = touch.identifier;
+
+				// If the target element is a child of a scrollable layer (using -webkit-overflow-scrolling: touch) and:
+				// 1) the user does a fling scroll on the scrollable layer
+				// 2) the user stops the fling scroll with another tap
+				// then the event.target of the last 'touchend' event will be the element that was under the user's finger
+				// when the fling scroll was started, causing FastClick to send a click event to that layer - unless a check
+				// is made to ensure that a parent layer was not scrolled before sending a synthetic click (issue #42).
+				this.updateScrollParent(targetElement);
+			}
+		}
+
+		this.trackingClick = true;
+		this.trackingClickStart = event.timeStamp;
+		this.targetElement = targetElement;
+
+		this.touchStartX = touch.pageX;
+		this.touchStartY = touch.pageY;
+
+		// Prevent phantom clicks on fast double-tap (issue #36)
+		if ((event.timeStamp - this.lastClickTime) < this.tapDelay) {
+			event.preventDefault();
+		}
+
+		return true;
+	};
+
+
+	/**
+	 * Based on a touchmove event object, check whether the touch has moved past a boundary since it started.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.touchHasMoved = function(event) {
+		var touch = event.changedTouches[0], boundary = this.touchBoundary;
+
+		if (Math.abs(touch.pageX - this.touchStartX) > boundary || Math.abs(touch.pageY - this.touchStartY) > boundary) {
+			return true;
+		}
+
+		return false;
+	};
+
+
+	/**
+	 * Update the last position.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.onTouchMove = function(event) {
+		if (!this.trackingClick) {
+			return true;
+		}
+
+		// If the touch has moved, cancel the click tracking
+		if (this.targetElement !== this.getTargetElementFromEventTarget(event.target) || this.touchHasMoved(event)) {
+			this.trackingClick = false;
+			this.targetElement = null;
+		}
+
+		return true;
+	};
+
+
+	/**
+	 * Attempt to find the labelled control for the given label element.
+	 *
+	 * @param {EventTarget|HTMLLabelElement} labelElement
+	 * @returns {Element|null}
+	 */
+	FastClick.prototype.findControl = function(labelElement) {
+
+		// Fast path for newer browsers supporting the HTML5 control attribute
+		if (labelElement.control !== undefined) {
+			return labelElement.control;
+		}
+
+		// All browsers under test that support touch events also support the HTML5 htmlFor attribute
+		if (labelElement.htmlFor) {
+			return document.getElementById(labelElement.htmlFor);
+		}
+
+		// If no for attribute exists, attempt to retrieve the first labellable descendant element
+		// the list of which is defined here: http://www.w3.org/TR/html5/forms.html#category-label
+		return labelElement.querySelector('button, input:not([type=hidden]), keygen, meter, output, progress, select, textarea');
+	};
+
+
+	/**
+	 * On touch end, determine whether to send a click event at once.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.onTouchEnd = function(event) {
+		var forElement, trackingClickStart, targetTagName, scrollParent, touch, targetElement = this.targetElement;
+
+		if (!this.trackingClick) {
+			return true;
+		}
+
+		// Prevent phantom clicks on fast double-tap (issue #36)
+		if ((event.timeStamp - this.lastClickTime) < this.tapDelay) {
+			this.cancelNextClick = true;
+			return true;
+		}
+
+		if ((event.timeStamp - this.trackingClickStart) > this.tapTimeout) {
+			return true;
+		}
+
+		// Reset to prevent wrong click cancel on input (issue #156).
+		this.cancelNextClick = false;
+
+		this.lastClickTime = event.timeStamp;
+
+		trackingClickStart = this.trackingClickStart;
+		this.trackingClick = false;
+		this.trackingClickStart = 0;
+
+		// On some iOS devices, the targetElement supplied with the event is invalid if the layer
+		// is performing a transition or scroll, and has to be re-detected manually. Note that
+		// for this to function correctly, it must be called *after* the event target is checked!
+		// See issue #57; also filed as rdar://13048589 .
+		if (deviceIsIOSWithBadTarget) {
+			touch = event.changedTouches[0];
+
+			// In certain cases arguments of elementFromPoint can be negative, so prevent setting targetElement to null
+			targetElement = document.elementFromPoint(touch.pageX - window.pageXOffset, touch.pageY - window.pageYOffset) || targetElement;
+			targetElement.fastClickScrollParent = this.targetElement.fastClickScrollParent;
+		}
+
+		targetTagName = targetElement.tagName.toLowerCase();
+		if (targetTagName === 'label') {
+			forElement = this.findControl(targetElement);
+			if (forElement) {
+				this.focus(targetElement);
+				if (deviceIsAndroid) {
+					return false;
+				}
+
+				targetElement = forElement;
+			}
+		} else if (this.needsFocus(targetElement)) {
+
+			// Case 1: If the touch started a while ago (best guess is 100ms based on tests for issue #36) then focus will be triggered anyway. Return early and unset the target element reference so that the subsequent click will be allowed through.
+			// Case 2: Without this exception for input elements tapped when the document is contained in an iframe, then any inputted text won't be visible even though the value attribute is updated as the user types (issue #37).
+			if ((event.timeStamp - trackingClickStart) > 100 || (deviceIsIOS && window.top !== window && targetTagName === 'input')) {
+				this.targetElement = null;
+				return false;
+			}
+
+			this.focus(targetElement);
+			this.sendClick(targetElement, event);
+
+			// Select elements need the event to go through on iOS 4, otherwise the selector menu won't open.
+			// Also this breaks opening selects when VoiceOver is active on iOS6, iOS7 (and possibly others)
+			if (!deviceIsIOS || targetTagName !== 'select') {
+				this.targetElement = null;
+				event.preventDefault();
+			}
+
+			return false;
+		}
+
+		if (deviceIsIOS && !deviceIsIOS4) {
+
+			// Don't send a synthetic click event if the target element is contained within a parent layer that was scrolled
+			// and this tap is being used to stop the scrolling (usually initiated by a fling - issue #42).
+			scrollParent = targetElement.fastClickScrollParent;
+			if (scrollParent && scrollParent.fastClickLastScrollTop !== scrollParent.scrollTop) {
+				return true;
+			}
+		}
+
+		// Prevent the actual click from going though - unless the target node is marked as requiring
+		// real clicks or if it is in the whitelist in which case only non-programmatic clicks are permitted.
+		if (!this.needsClick(targetElement)) {
+			event.preventDefault();
+			this.sendClick(targetElement, event);
+		}
+
+		return false;
+	};
+
+
+	/**
+	 * On touch cancel, stop tracking the click.
+	 *
+	 * @returns {void}
+	 */
+	FastClick.prototype.onTouchCancel = function() {
+		this.trackingClick = false;
+		this.targetElement = null;
+	};
+
+
+	/**
+	 * Determine mouse events which should be permitted.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.onMouse = function(event) {
+
+		// If a target element was never set (because a touch event was never fired) allow the event
+		if (!this.targetElement) {
+			return true;
+		}
+
+		if (event.forwardedTouchEvent) {
+			return true;
+		}
+
+		// Programmatically generated events targeting a specific element should be permitted
+		if (!event.cancelable) {
+			return true;
+		}
+
+		// Derive and check the target element to see whether the mouse event needs to be permitted;
+		// unless explicitly enabled, prevent non-touch click events from triggering actions,
+		// to prevent ghost/doubleclicks.
+		if (!this.needsClick(this.targetElement) || this.cancelNextClick) {
+
+			// Prevent any user-added listeners declared on FastClick element from being fired.
+			if (event.stopImmediatePropagation) {
+				event.stopImmediatePropagation();
+			} else {
+
+				// Part of the hack for browsers that don't support Event#stopImmediatePropagation (e.g. Android 2)
+				event.propagationStopped = true;
+			}
+
+			// Cancel the event
+			event.stopPropagation();
+			event.preventDefault();
+
+			return false;
+		}
+
+		// If the mouse event is permitted, return true for the action to go through.
+		return true;
+	};
+
+
+	/**
+	 * On actual clicks, determine whether this is a touch-generated click, a click action occurring
+	 * naturally after a delay after a touch (which needs to be cancelled to avoid duplication), or
+	 * an actual click which should be permitted.
+	 *
+	 * @param {Event} event
+	 * @returns {boolean}
+	 */
+	FastClick.prototype.onClick = function(event) {
+		var permitted;
+
+		// It's possible for another FastClick-like library delivered with third-party code to fire a click event before FastClick does (issue #44). In that case, set the click-tracking flag back to false and return early. This will cause onTouchEnd to return early.
+		if (this.trackingClick) {
+			this.targetElement = null;
+			this.trackingClick = false;
+			return true;
+		}
+
+		// Very odd behaviour on iOS (issue #18): if a submit element is present inside a form and the user hits enter in the iOS simulator or clicks the Go button on the pop-up OS keyboard the a kind of 'fake' click event will be triggered with the submit-type input element as the target.
+		if (event.target.type === 'submit' && event.detail === 0) {
+			return true;
+		}
+
+		permitted = this.onMouse(event);
+
+		// Only unset targetElement if the click is not permitted. This will ensure that the check for !targetElement in onMouse fails and the browser's click doesn't go through.
+		if (!permitted) {
+			this.targetElement = null;
+		}
+
+		// If clicks are permitted, return true for the action to go through.
+		return permitted;
+	};
+
+
+	/**
+	 * Remove all FastClick's event listeners.
+	 *
+	 * @returns {void}
+	 */
+	FastClick.prototype.destroy = function() {
+		var layer = this.layer;
+
+		if (deviceIsAndroid) {
+			layer.removeEventListener('mouseover', this.onMouse, true);
+			layer.removeEventListener('mousedown', this.onMouse, true);
+			layer.removeEventListener('mouseup', this.onMouse, true);
+		}
+
+		layer.removeEventListener('click', this.onClick, true);
+		layer.removeEventListener('touchstart', this.onTouchStart, false);
+		layer.removeEventListener('touchmove', this.onTouchMove, false);
+		layer.removeEventListener('touchend', this.onTouchEnd, false);
+		layer.removeEventListener('touchcancel', this.onTouchCancel, false);
+	};
+
+
+	/**
+	 * Check whether FastClick is needed.
+	 *
+	 * @param {Element} layer The layer to listen on
+	 */
+	FastClick.notNeeded = function(layer) {
+		var metaViewport;
+		var chromeVersion;
+		var blackberryVersion;
+		var firefoxVersion;
+
+		// Devices that don't support touch don't need FastClick
+		if (typeof window.ontouchstart === 'undefined') {
+			return true;
+		}
+
+		// Chrome version - zero for other browsers
+		chromeVersion = +(/Chrome\/([0-9]+)/.exec(navigator.userAgent) || [,0])[1];
+
+		if (chromeVersion) {
+
+			if (deviceIsAndroid) {
+				metaViewport = document.querySelector('meta[name=viewport]');
+
+				if (metaViewport) {
+					// Chrome on Android with user-scalable="no" doesn't need FastClick (issue #89)
+					if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
+						return true;
+					}
+					// Chrome 32 and above with width=device-width or less don't need FastClick
+					if (chromeVersion > 31 && document.documentElement.scrollWidth <= window.outerWidth) {
+						return true;
+					}
+				}
+
+			// Chrome desktop doesn't need FastClick (issue #15)
+			} else {
+				return true;
+			}
+		}
+
+		if (deviceIsBlackBerry10) {
+			blackberryVersion = navigator.userAgent.match(/Version\/([0-9]*)\.([0-9]*)/);
+
+			// BlackBerry 10.3+ does not require Fastclick library.
+			// https://github.com/ftlabs/fastclick/issues/251
+			if (blackberryVersion[1] >= 10 && blackberryVersion[2] >= 3) {
+				metaViewport = document.querySelector('meta[name=viewport]');
+
+				if (metaViewport) {
+					// user-scalable=no eliminates click delay.
+					if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
+						return true;
+					}
+					// width=device-width (or less than device-width) eliminates click delay.
+					if (document.documentElement.scrollWidth <= window.outerWidth) {
+						return true;
+					}
+				}
+			}
+		}
+
+		// IE10 with -ms-touch-action: none or manipulation, which disables double-tap-to-zoom (issue #97)
+		if (layer.style.msTouchAction === 'none' || layer.style.touchAction === 'manipulation') {
+			return true;
+		}
+
+		// Firefox version - zero for other browsers
+		firefoxVersion = +(/Firefox\/([0-9]+)/.exec(navigator.userAgent) || [,0])[1];
+
+		if (firefoxVersion >= 27) {
+			// Firefox 27+ does not have tap delay if the content is not zoomable - https://bugzilla.mozilla.org/show_bug.cgi?id=922896
+
+			metaViewport = document.querySelector('meta[name=viewport]');
+			if (metaViewport && (metaViewport.content.indexOf('user-scalable=no') !== -1 || document.documentElement.scrollWidth <= window.outerWidth)) {
+				return true;
+			}
+		}
+
+		// IE11: prefixed -ms-touch-action is no longer supported and it's recomended to use non-prefixed version
+		// http://msdn.microsoft.com/en-us/library/windows/apps/Hh767313.aspx
+		if (layer.style.touchAction === 'none' || layer.style.touchAction === 'manipulation') {
+			return true;
+		}
+
+		return false;
+	};
+
+
+	/**
+	 * Factory method for creating a FastClick object
+	 *
+	 * @param {Element} layer The layer to listen on
+	 * @param {Object} [options={}] The options to override the defaults
+	 */
+	FastClick.attach = function(layer, options) {
+		return new FastClick(layer, options);
+	};
+
+
+	if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+
+		// AMD. Register as an anonymous module.
+		define(function() {
+			return FastClick;
+		});
+	} else if (typeof module !== 'undefined' && module.exports) {
+		module.exports = FastClick.attach;
+		module.exports.FastClick = FastClick;
+	} else {
+		window.FastClick = FastClick;
+	}
+}());
+
+/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+
+;(function(root, factory) {
+
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.NProgress = factory();
+  }
+
+})(this, function() {
+  var NProgress = {};
+
+  NProgress.version = '0.2.0';
+
+  var Settings = NProgress.settings = {
+    minimum: 0.08,
+    easing: 'ease',
+    positionUsing: '',
+    speed: 200,
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
+    showSpinner: true,
+    barSelector: '[role="bar"]',
+    spinnerSelector: '[role="spinner"]',
+    parent: 'body',
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+  };
+
+  /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */
+  NProgress.configure = function(options) {
+    var key, value;
+    for (key in options) {
+      value = options[key];
+      if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+    }
+
+    return this;
+  };
+
+  /**
+   * Last number.
+   */
+
+  NProgress.status = null;
+
+  /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */
+
+  NProgress.set = function(n) {
+    var started = NProgress.isStarted();
+
+    n = clamp(n, Settings.minimum, 1);
+    NProgress.status = (n === 1 ? null : n);
+
+    var progress = NProgress.render(!started),
+        bar      = progress.querySelector(Settings.barSelector),
+        speed    = Settings.speed,
+        ease     = Settings.easing;
+
+    progress.offsetWidth; /* Repaint */
+
+    queue(function(next) {
+      // Set positionUsing if it hasn't already been set
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+
+      // Add transition
+      css(bar, barPositionCSS(n, speed, ease));
+
+      if (n === 1) {
+        // Fade out
+        css(progress, { 
+          transition: 'none', 
+          opacity: 1 
+        });
+        progress.offsetWidth; /* Repaint */
+
+        setTimeout(function() {
+          css(progress, { 
+            transition: 'all ' + speed + 'ms linear', 
+            opacity: 0 
+          });
+          setTimeout(function() {
+            NProgress.remove();
+            next();
+          }, speed);
+        }, speed);
+      } else {
+        setTimeout(next, speed);
+      }
+    });
+
+    return this;
+  };
+
+  NProgress.isStarted = function() {
+    return typeof NProgress.status === 'number';
+  };
+
+  /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */
+  NProgress.start = function() {
+    if (!NProgress.status) NProgress.set(0);
+
+    var work = function() {
+      setTimeout(function() {
+        if (!NProgress.status) return;
+        NProgress.trickle();
+        work();
+      }, Settings.trickleSpeed);
+    };
+
+    if (Settings.trickle) work();
+
+    return this;
+  };
+
+  /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */
+
+  NProgress.done = function(force) {
+    if (!force && !NProgress.status) return this;
+
+    return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+  };
+
+  /**
+   * Increments by a random amount.
+   */
+
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else {
+      if (typeof amount !== 'number') {
+        amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+
+  NProgress.trickle = function() {
+    return NProgress.inc(Math.random() * Settings.trickleRate);
+  };
+
+  /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */
+  (function() {
+    var initial = 0, current = 0;
+
+    NProgress.promise = function($promise) {
+      if (!$promise || $promise.state() === "resolved") {
+        return this;
+      }
+
+      if (current === 0) {
+        NProgress.start();
+      }
+
+      initial++;
+      current++;
+
+      $promise.always(function() {
+        current--;
+        if (current === 0) {
+            initial = 0;
+            NProgress.done();
+        } else {
+            NProgress.set((initial - current) / initial);
+        }
+      });
+
+      return this;
+    };
+
+  })();
+
+  /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */
+
+  NProgress.render = function(fromStart) {
+    if (NProgress.isRendered()) return document.getElementById('nprogress');
+
+    addClass(document.documentElement, 'nprogress-busy');
+    
+    var progress = document.createElement('div');
+    progress.id = 'nprogress';
+    progress.innerHTML = Settings.template;
+
+    var bar      = progress.querySelector(Settings.barSelector),
+        perc     = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        parent   = document.querySelector(Settings.parent),
+        spinner;
+    
+    css(bar, {
+      transition: 'all 0 linear',
+      transform: 'translate3d(' + perc + '%,0,0)'
+    });
+
+    if (!Settings.showSpinner) {
+      spinner = progress.querySelector(Settings.spinnerSelector);
+      spinner && removeElement(spinner);
+    }
+
+    if (parent != document.body) {
+      addClass(parent, 'nprogress-custom-parent');
+    }
+
+    parent.appendChild(progress);
+    return progress;
+  };
+
+  /**
+   * Removes the element. Opposite of render().
+   */
+
+  NProgress.remove = function() {
+    removeClass(document.documentElement, 'nprogress-busy');
+    removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+    var progress = document.getElementById('nprogress');
+    progress && removeElement(progress);
+  };
+
+  /**
+   * Checks if the progress bar is rendered.
+   */
+
+  NProgress.isRendered = function() {
+    return !!document.getElementById('nprogress');
+  };
+
+  /**
+   * Determine which positioning CSS rule to use.
+   */
+
+  NProgress.getPositioningCSS = function() {
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
+
+    // Sniff prefixes
+    var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
+                       ('MozTransform' in bodyStyle) ? 'Moz' :
+                       ('msTransform' in bodyStyle) ? 'ms' :
+                       ('OTransform' in bodyStyle) ? 'O' : '';
+
+    if (vendorPrefix + 'Perspective' in bodyStyle) {
+      // Modern browsers with 3D support, e.g. Webkit, IE10
+      return 'translate3d';
+    } else if (vendorPrefix + 'Transform' in bodyStyle) {
+      // Browsers without 3D support, e.g. IE9
+      return 'translate';
+    } else {
+      // Browsers without translate() support, e.g. IE7-8
+      return 'margin';
+    }
+  };
+
+  /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+
+  /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */
+
+  function toBarPerc(n) {
+    return (-1 + n) * 100;
+  }
+
+
+  /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */
+
+  function barPositionCSS(n, speed, ease) {
+    var barCSS;
+
+    if (Settings.positionUsing === 'translate3d') {
+      barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
+    } else if (Settings.positionUsing === 'translate') {
+      barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
+    } else {
+      barCSS = { 'margin-left': toBarPerc(n)+'%' };
+    }
+
+    barCSS.transition = 'all '+speed+'ms '+ease;
+
+    return barCSS;
+  }
+
+  /**
+   * (Internal) Queues a function to be executed.
+   */
+
+  var queue = (function() {
+    var pending = [];
+    
+    function next() {
+      var fn = pending.shift();
+      if (fn) {
+        fn(next);
+      }
+    }
+
+    return function(fn) {
+      pending.push(fn);
+      if (pending.length == 1) next();
+    };
+  })();
+
+  /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */
+
+  var css = (function() {
+    var cssPrefixes = [ 'Webkit', 'O', 'Moz', 'ms' ],
+        cssProps    = {};
+
+    function camelCase(string) {
+      return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+        return letter.toUpperCase();
+      });
+    }
+
+    function getVendorProp(name) {
+      var style = document.body.style;
+      if (name in style) return name;
+
+      var i = cssPrefixes.length,
+          capName = name.charAt(0).toUpperCase() + name.slice(1),
+          vendorName;
+      while (i--) {
+        vendorName = cssPrefixes[i] + capName;
+        if (vendorName in style) return vendorName;
+      }
+
+      return name;
+    }
+
+    function getStyleProp(name) {
+      name = camelCase(name);
+      return cssProps[name] || (cssProps[name] = getVendorProp(name));
+    }
+
+    function applyCss(element, prop, value) {
+      prop = getStyleProp(prop);
+      element.style[prop] = value;
+    }
+
+    return function(element, properties) {
+      var args = arguments,
+          prop, 
+          value;
+
+      if (args.length == 2) {
+        for (prop in properties) {
+          value = properties[prop];
+          if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+        }
+      } else {
+        applyCss(element, args[1], args[2]);
+      }
+    }
+  })();
+
+  /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */
+
+  function hasClass(element, name) {
+    var list = typeof element == 'string' ? element : classList(element);
+    return list.indexOf(' ' + name + ' ') >= 0;
+  }
+
+  /**
+   * (Internal) Adds a class to an element.
+   */
+
+  function addClass(element, name) {
+    var oldList = classList(element),
+        newList = oldList + name;
+
+    if (hasClass(oldList, name)) return; 
+
+    // Trim the opening space.
+    element.className = newList.substring(1);
+  }
+
+  /**
+   * (Internal) Removes a class from an element.
+   */
+
+  function removeClass(element, name) {
+    var oldList = classList(element),
+        newList;
+
+    if (!hasClass(element, name)) return;
+
+    // Replace the class name.
+    newList = oldList.replace(' ' + name + ' ', ' ');
+
+    // Trim the opening and closing spaces.
+    element.className = newList.substring(1, newList.length - 1);
+  }
+
+  /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */
+
+  function classList(element) {
+    return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+  }
+
+  /**
+   * (Internal) Removes an element from the DOM.
+   */
+
+  function removeElement(element) {
+    element && element.parentNode && element.parentNode.removeChild(element);
+  }
+
+  return NProgress;
+});
+

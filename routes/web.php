@@ -21,6 +21,15 @@ Route::group(['prefix' => 'dashboard', 'namespace' => 'Admin'], function () {
     Route::post('login', 'Auth\LoginController@postLogin')->name('admin.login');
     Route::get('logout', 'Auth\LoginController@logout');
 
-
     Route::get('/', 'HomeController@index');
+});
+
+
+Route::group(['prefix' => 'api/v1', 'namespace' => 'Admin\Api'], function () {
+
+    Route::get('users/adminInfo', 'UserController@adminInfo');
+    Route::resource('users', 'UserController');
+    Route::resource('tags', 'TagController');
+    Route::resource('posts', 'PostController');
+
 });

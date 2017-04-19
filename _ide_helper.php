@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.4.19 on 2017-04-18.
+ * Generated for Laravel 5.4.19 on 2017-04-19.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -11534,6 +11534,101 @@ namespace Zizaco\Entrust {
     }         
 }
     
+namespace Cyvelnet\Laravel5Fractal\Facades {
+
+    class Fractal {
+        
+        /**
+         * 
+         *
+         * @return mixed 
+         * @static 
+         */
+        public static function getManager()
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::getManager();
+        }
+        
+        /**
+         * includes sub level data transformer.
+         *
+         * @param string|array $includes
+         * @return $this 
+         * @static 
+         */
+        public static function includes($includes)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::includes($includes);
+        }
+        
+        /**
+         * excludes sub level from data transformer.
+         *
+         * @param string|array $excludes
+         * @return $this 
+         * @static 
+         */
+        public static function excludes($excludes)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::excludes($excludes);
+        }
+        
+        /**
+         * set data transformation recursion limit.
+         *
+         * @param $limit
+         * @return $this 
+         * @static 
+         */
+        public static function setRecursionLimit($limit)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::setRecursionLimit($limit);
+        }
+        
+        /**
+         * set data serializer.
+         *
+         * @param \League\Fractal\Serializer\SerializerAbstract $serializer
+         * @return $this 
+         * @static 
+         */
+        public static function setSerializer($serializer)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::setSerializer($serializer);
+        }
+        
+        /**
+         * transform item.
+         *
+         * @param $item
+         * @param \League\Fractal\TransformerAbstract|callable|\Closure $transformer
+         * @param null $resourceKey
+         * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter 
+         * @static 
+         */
+        public static function item($item, $transformer, $resourceKey = null)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::item($item, $transformer, $resourceKey);
+        }
+        
+        /**
+         * transform a collection.
+         *
+         * @param $items
+         * @param \League\Fractal\TransformerAbstract|callable|\Closure $transformer
+         * @param null $resourceKey
+         * @param \Cyvelnet\Laravel5Fractal\PaginatorInterface $adapter
+         * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter 
+         * @static 
+         */
+        public static function collection($items, $transformer, $resourceKey = null, $adapter = null)
+        {
+            return \Cyvelnet\Laravel5Fractal\FractalServices::collection($items, $transformer, $resourceKey, $adapter);
+        }
+        
+    }         
+}
+    
     
 namespace {
 
@@ -14525,6 +14620,8 @@ if (! function_exists('with')) {
         }
     
     class Entrust extends \Zizaco\Entrust\EntrustFacade {}
+    
+    class Fractal extends \Cyvelnet\Laravel5Fractal\Facades\Fractal {}
     
 }
 

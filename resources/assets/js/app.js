@@ -29,9 +29,11 @@ const store = new Vuex.Store({
 })
 
 import App from './App.vue'
+import router from './route'
 
 const app = new Vue({
     store,
+    router,
     el: '#app',
     render: h=>h(App)
 });

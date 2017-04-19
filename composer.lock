@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d8fe62dd39d0f5785129c9fbd257811",
+    "content-hash": "14bb387113d9fadea9f1d94a828618bf",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -120,6 +120,56 @@
                 }
             ],
             "time": "2016-06-13T19:28:20+00:00"
+        },
+        {
+            "name": "cyvelnet/laravel5-fractal",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cyvelnet/laravel5-fractal.git",
+                "reference": "bee996821c125b6412a9c21d81a5771e4ccddc90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/Cyvelnet/laravel5-fractal/bee996821c125b6412a9c21d81a5771e4ccddc90.zip",
+                "reference": "bee996821c125b6412a9c21d81a5771e4ccddc90",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.5",
+                "illuminate/support": "^5.0",
+                "league/fractal": "0.14.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Cyvelnet\\Laravel5Fractal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cyvelnet",
+                    "email": "cyvelnet@gmail.com"
+                }
+            ],
+            "description": "A simple fractal service provider and transformer generator with model attributes for laravel 5.",
+            "keywords": [
+                "Api transformer",
+                "fractal",
+                "laravel5"
+            ],
+            "time": "2017-02-13T12:13:22+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1022,6 +1072,69 @@
                 "storage"
             ],
             "time": "2017-03-22T15:43:14+00:00"
+        },
+        {
+            "name": "league/fractal",
+            "version": "0.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/thephpleague/fractal/56ad8933fbb40328ca3321c84143b2c16186eebf.zip",
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2016-07-21T09:56:14+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\AuthAdmin;
+use App\Http\Middleware\AuthApi;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -64,5 +65,6 @@ class Kernel extends HttpKernel
         'ability' => \Zizaco\Entrust\Middleware\EntrustAbility::class,
 
         'auth.admin' => AuthAdmin::class,
+        'auth.api' => AuthApi::class,
     ];
 }

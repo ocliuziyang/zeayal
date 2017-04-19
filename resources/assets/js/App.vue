@@ -5,7 +5,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+                        <a href="/dashboard" class="site_title"><i class="fa fa-paw"></i> <span>后台管理</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -13,11 +13,11 @@
                     <!-- menu profile quick info -->
                     <div class="profile">
                         <div class="profile_pic">
-                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                            <img :src="user.avatar" alt="..." class="img-circle profile_img">
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>John Doe</h2>
+                            <h2>{{ user.name }}</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -48,51 +48,12 @@
             </div>
 
             <!-- top navigation -->
-            <Navbar></Navbar>
+            <Navbar :user="user"></Navbar>
             <!-- /top navigation -->
 
             <!-- page content -->
             <div class="right_col" role="main">
-                <div class="">
-                    <div class="page-title">
-                        <div class="title_left">
-                            <h3>Plain Page</h3>
-                        </div>
-
-                        <div class="title_right">
-                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search for...">
-                                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2>Plain Page</h2>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-
-                                    <div class="col-md-6 col-md-offset-3">
-                                        计数器：<label class="btn btn-danger" @click="cut">-</label>
-                                        <label for="" class="label label-default" style="margin: 0 10px">{{ count }}</label>
-                                        <label class="btn btn-success" @click="increments">+</label>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <router-view></router-view>
             </div>
             <!-- /page content -->
 
@@ -113,6 +74,12 @@
     import Navbar from './dashboard/layouts/Navbar.vue'
     import Sidebar from './dashboard/layouts/Sidebar.vue'
     export default {
+        data () {
+
+            return {
+                user: {}
+            }
+        },
         computed: {
             count () {
                 return this.$store.state.count
@@ -125,9 +92,21 @@
             },
             cut () {
                 this.$store.commit('cut')
+            },
+
+            fetchAdminInfo() {
+                axios.get('users/adminInfo').then(response => {
+                    this.user = response.data
+                }).catch(error => {
+                    console.log(error)
+                })
             }
         },
         components: {Navbar, Sidebar},
+
+        mounted () {
+            this.fetchAdminInfo()
+        }
 
     }
 </script>

@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->boolean('sex')->nullable()->comment('性别 可为空');
             $table->date('birthday')->nullable()->comment('出生日期 可为空');
             $table->string('bio')->nullable()->comment('个人简介 可为空');
-
+            $table->string('avatar')->default('/images/user.png');
             $table->rememberToken();
             $table->timestamps();
         });

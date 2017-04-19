@@ -178,8 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Zizaco\Entrust\EntrustServiceProvider::class,
-
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Cyvelnet\Laravel5Fractal\Laravel5FractalServiceProvider::class,
 
     ],
 
@@ -231,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Fractal' => Cyvelnet\Laravel5Fractal\Facades\Fractal::class,
     ],
 
 ];

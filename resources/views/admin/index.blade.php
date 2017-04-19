@@ -12,6 +12,11 @@
 </head>
 <body class="nav-md">
 
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
     <div id="app"></div>
 
 

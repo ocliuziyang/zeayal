@@ -36,7 +36,7 @@
                                         <p>{{ tag.name }}</p>
                                         <div class="tools tools-bottom">
                                             <a href="#"><i class="fa fa-link"></i></a>
-                                            <a href="javascript:;" @click="showModal=true"><i class="fa fa-pencil"></i></a>
+                                            <a href="javascript:;" @click="showEditTagModal(tag.id)"><i class="fa fa-pencil"></i></a>
                                             <a href="#"><i class="fa fa-times"></i></a>
                                         </div>
                                     </div>
@@ -48,11 +48,35 @@
                         </div>
                     </div>
 
-                    <Modal v-if="showModal" @close="showModal=false" @submit="submit()">
+                    <!--编辑分类模态框-->
+                    <Modal v-if="showModal" @close="showModal=false" modal-style='modal-md'>
 
                         <h3 slot="header">编辑分类</h3>
 
+                        <form slot="body">
+
+                            <label>父级分类</label>
+                            <select v-model="tag.fid">
+                                <option value="0">顶级分类</option>
+                                <option v-for="option in tags" :value="option.id" v-if="option.fid==0">&nbsp;&nbsp;&nbsp;{{ option.name }}</option>
+                            </select>
+
+                            <div>
+                                <label>名称</label>
+                                <input type="text" placeholder="输入名称" class="form-control" v-model="tag.name">
+                            </div>
+
+                            <label>注释</label>
+                            <input type="text" placeholder="输入注释" class="form-control" v-model="tag.description">
+                        </form>
+
+                        <div slot="footer">
+                            <button class="btn btn-default pull-left" @click="showModal=false">取消</button>
+                            <button class="btn btn-primary" @click="showModal=false">确定</button>
+                        </div>
+
                     </Modal>
+                    <!-- 编辑分类模态框./-->
 
 
                 </div>
@@ -70,7 +94,8 @@
         data () {
             return {
                 tags:[],
-                showModal: false
+                showModal: false,
+                tag: {}
             }
         },
         components: {Modal},
@@ -82,6 +107,14 @@
                 }).catch(error => {
 
                 })
+            },
+
+            showEditTagModal(id) {
+                this.fetchTags()
+                axios.get('tags/'+id+'/edit').then(response => {
+                    this.tag = response.data
+                    this.showModal = true
+                });
             }
         },
         mounted () {

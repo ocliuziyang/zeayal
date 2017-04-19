@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .modal-mask {
         position: fixed;
         top: 0;
@@ -20,11 +20,23 @@
     .modal-container {
         width: 300px;
         margin: 0 auto;
-        padding: 20px 30px;
+        padding: 10px 30px;
         background-color: #FFF;
+        border-radius: 10px;
 
     }
 
+    .modal-sm {
+        width: 300px;
+    }
+
+    .modal-md {
+        width: 50%;
+    }
+
+    .modal-lg {
+        width: 70%;
+    }
     p {
         text-align: left;
     }
@@ -33,11 +45,11 @@
 
 <template>
 
-    <transition enter-active-class="animated bounceInLeft"
+    <transition enter-active-class="animated tada"
                 leave-active-class="animated bounceOutRight">
         <div class="modal-mask">
-            <div class="modal-wrapper">
-                <div class="modal-container">
+            <div class="modal-wrapper"  @click.self="$emit('close')">
+                <div class="modal-container" :class="modalStyle">
                     <div class="modal-header">
                         <slot name="header">
                             Default header
@@ -52,7 +64,7 @@
                     <div class="modal-footer">
                         <slot name="footer">
                             <p>Default footer</p>
-                            <button class="btn btn-primary modal-default-button" @click="$emit('submit')">确定</button>
+                            <button class="btn btn-primary modal-default-button" @click="$emit('close')">确定</button>
                         </slot>
 
                     </div>
@@ -66,7 +78,12 @@
 <script>
 
     export default {
-
+        props: {
+            modalStyle: {
+                type: String,
+                default: 'modal-sm'
+            }
+        }
     }
 
 </script>

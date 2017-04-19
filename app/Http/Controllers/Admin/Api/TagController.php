@@ -60,6 +60,8 @@ class TagController extends ApiController
     public function edit($id)
     {
         //
+        $tag = Tag::whereId($id)->first();
+        return $this->responseWithData($tag, new TagTransformer());
     }
 
     /**

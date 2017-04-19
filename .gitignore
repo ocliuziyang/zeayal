@@ -8,6 +8,7 @@ Homestead.json
 Homestead.yaml
 .env
 
-public/assets/gentelella/documentation
-public/assets/gentelella/production
-public/assets/gentelella/vendors
+public/assets
+public/css
+public/js
+public/fonts

@@ -1,3 +1,12 @@
+<style scoped>
+
+    .file-upload img {
+        max-width: 30%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+</style>
 <template>
 
     <div class="row">
@@ -5,21 +14,8 @@
             <div class="x_panel">
                 <div class="x_title">
                     <h2>Media Gallery <small> gallery design </small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings 1</a>
-                                </li>
-                                <li><a href="#">Settings 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                    </ul>
+
+
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -49,33 +45,46 @@
                     </div>
 
                     <!--编辑分类模态框-->
-                    <Modal v-if="showModal" @close="showModal=false" modal-style='modal-md'>
+                    <modal v-if="showModal" @close="showModal=false" modal-style='modal-md'>
 
                         <h3 slot="header">编辑分类</h3>
 
-                        <form slot="body">
+                        <form slot="body" class="form">
 
-                            <label>父级分类</label>
-                            <select v-model="tag.fid">
-                                <option value="0">顶级分类</option>
-                                <option v-for="option in tags" :value="option.id" v-if="option.fid==0">&nbsp;&nbsp;&nbsp;{{ option.name }}</option>
-                            </select>
+                            <div  class="form-group">
+                                <label>父级分类</label>
+                                <select v-model="tag.fid">
+                                    <option value="0">顶级分类</option>
+                                    <option v-for="option in tags" :value="option.id" v-if="option.fid==0 && option.id != tag.id">&nbsp;&nbsp;&nbsp;{{ option.name }}</option>
+                                </select>
+                            </div>
 
-                            <div>
+                            <div  class="form-group">
                                 <label>名称</label>
                                 <input type="text" placeholder="输入名称" class="form-control" v-model="tag.name">
                             </div>
 
-                            <label>注释</label>
-                            <input type="text" placeholder="输入注释" class="form-control" v-model="tag.description">
+                            <div  class="form-group">
+                                <label>注释</label>
+                                <input type="text" placeholder="输入注释" class="form-control" v-model="tag.description">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">缩略图</label>
+                                <div class="file-upload">
+                                    <img :src="tag.thumbnail" alt="缩略图">
+                                    <vue-core-image-upload :class="['pure-button','pure-button-primary','js-btn-crop']" :crop="false" url="/api/v1/uploadFile" extensions="png,gif,jpeg,jpg" @imageuploaded="imageuploaded" @imagechanged="imagechanged" @imageuploading="imageuploading" :headers="csrf" :isXhr=true></vue-core-image-upload>
+                                </div>
+                            </div>
                         </form>
 
                         <div slot="footer">
+
                             <button class="btn btn-default pull-left" @click="showModal=false">取消</button>
-                            <button class="btn btn-primary" @click="showModal=false">确定</button>
+                            <button class="btn btn-primary" @click="editTag()">确定</button>
                         </div>
 
-                    </Modal>
+                    </modal>
                     <!-- 编辑分类模态框./-->
 
 
@@ -89,23 +98,28 @@
 
 
     import Modal from '../../components/Modal.vue'
+    import { show_stack_custom } from '../../vendor/notify'
+    import VueCoreImageUpload  from 'vue-core-image-upload';
 
     export default {
         data () {
             return {
                 tags:[],
                 showModal: false,
-                tag: {}
+                tag: {},
+                csrf: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
             }
         },
-        components: {Modal},
+        components: {
+            'modal': Modal,
+            'vue-core-image-upload': VueCoreImageUpload
+        },
         methods: {
             fetchTags () {
                 axios.get('/tags').then(response => {
-                    console.log(response)
                     this.tags = response.data.data
-                }).catch(error => {
-
                 })
             },
 
@@ -114,8 +128,39 @@
                 axios.get('tags/'+id+'/edit').then(response => {
                     this.tag = response.data
                     this.showModal = true
-                });
+                })
+            },
+
+            editTag () {
+
+                axios.post('tags/'+this.tag.id, {
+                    _method: 'put',
+                    tag: this.tag
+                }).then(response => {
+                    if (response.data.status === 1) {
+                        this.fetchTags()
+                        show_stack_custom('success', '更新分类')
+                    } else {
+                        show_stack_custom('error')
+                    }
+                    this.showModal = false
+                })
+            },
+
+            imageuploaded(res) {
+                console.log(res);
+            },
+
+            // return file object
+            imagechanged(res) {
+                console.log(res)
+            },
+
+            // uploading image
+            imageuploading(res) {
+                console.info('uploading');
             }
+
         },
         mounted () {
             this.fetchTags()

@@ -2,6 +2,8 @@
 
 Install
 
+	$ git clone --depth=1 https://github.com/ocliuziyang/zeayal.git
+	
     $ composer install
     
     $ yarn (or use $ npm install)

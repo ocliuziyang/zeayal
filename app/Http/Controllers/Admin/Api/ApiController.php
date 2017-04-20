@@ -8,10 +8,20 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 
+/**
+ * Class ApiController
+ * @package App\Http\Controllers\Admin\Api
+ */
 class ApiController extends Controller {
 
+    /**
+     * @var int
+     */
     protected $statusCode = 200;
 
+    /**
+     * ApiController constructor.
+     */
     public function __construct()
     {
         $this->middleware('auth.api');
@@ -33,11 +43,39 @@ class ApiController extends Controller {
         }
     }
 
+
+    public function responseWithSuccessMsg($msg='操作成功')
+    {
+        return $this->responseWithArray([
+            'status' => 1,
+            'message' => $msg
+        ]);
+    }
+
+    public function responseWithErrorMsg($msg='操作失败')
+    {
+        return $this->responseWithArray([
+            'status' => 0,
+            'message' => $msg
+        ]);
+    }
+
+
+    /**
+     * @param $model
+     * @param $transformer
+     * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter
+     */
     protected function responseWithItem($model, $transformer)
     {
         return Fractal::item($model, $transformer);
     }
 
+    /**
+     * @param $collection
+     * @param $transformer
+     * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter
+     */
     protected function responseWithCollection($collection, $transformer)
     {
         return Fractal::collection($collection, $transformer);
@@ -48,6 +86,11 @@ class ApiController extends Controller {
         return response()->json($data, $this->statusCode, $header);
     }
 
+    /**
+     * @param $header
+     * @param $message
+     * @return \Illuminate\Http\JsonResponse
+     */
     protected function errorWithData($header, $message)
     {
         $data = [
@@ -56,6 +99,7 @@ class ApiController extends Controller {
 
         return $this->responseWithArray($data, $header);
     }
+
 
     protected function errorWithInternetServer(array $header=[], $message='InternetServerError')
     {

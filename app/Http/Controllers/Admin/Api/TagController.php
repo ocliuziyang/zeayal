@@ -73,9 +73,30 @@ class TagController extends ApiController
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+        /**
+         *[2017-04-20 11:33:29] local.INFO: 1
+         * [2017-04-20 11:33:29] local.INFO: array (
+         * '_method' => 'put',
+         * 'tag' =>
+         * array (
+         * 'id' => 1,
+         * 'fid' => 0,
+         * 'name' => '人世间',
+         * 'description' => '世间事，人世间。',
+         * 'thumbnail' => '/images/tag_default.gif',
+         * 'created_at' => '2017-04-19 07:32:39',
+         * 'updated_at' => '2017-04-19 07:32:39',
+         * ),
+         * )
+         */
+        $res = Tag::whereId($id)->first()->update($request['tag']);
+        if ($res) {
+            return $this->responseWithSuccessMsg();
+        }
 
+        return $this->responseWithErrorMsg();
+
+    }
     /**
      * Remove the specified resource from storage.
      *

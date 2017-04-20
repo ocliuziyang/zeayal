@@ -31,5 +31,6 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'Admin\Api'], function () {
     Route::resource('users', 'UserController');
     Route::resource('tags', 'TagController');
     Route::resource('posts', 'PostController');
-
+    Route::post('uploadFile', 'UploadController@upload');
 });
+

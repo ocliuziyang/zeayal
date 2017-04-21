@@ -30,7 +30,8 @@ class UploadController extends ApiController
                 $res = $disk->put($name, $content);
             }
             if ($res) {
-                $url = $disk->imagePreviewUrl($name, 'imageView2/0/w/350');
+                $url = $disk->downloadUrl($name);
+//                $url = $disk->imagePreviewUrl($name, 'imageView2/0/w/350');
                 return $this->responseWithSuccessMsg($url);
             }
             return $this->responseWithErrorMsg('上传失败');

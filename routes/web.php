@@ -34,11 +34,3 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'Admin\Api'], function () {
     Route::post('uploadFile', 'UploadController@upload');
 });
 
-
-Route::get('post', function () {
-  return 1;
-});
-Route::post('post', function (\Illuminate\Http\Request $request) {
-    Log::debug($request);
-    dd($request);
-});

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin\Api;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 use zgldh\QiniuStorage\QiniuStorage;
 class UploadController extends ApiController
 {

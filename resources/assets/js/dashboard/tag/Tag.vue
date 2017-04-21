@@ -73,7 +73,7 @@
                                 <label class="control-label">缩略图</label>
                                 <div class="file-upload">
                                     <img :src="tag.thumbnail" alt="缩略图">
-                                    <vue-core-image-upload :class="['pure-button','pure-button-primary','js-btn-crop']" :crop="false" url="/api/v1/uploadFile" extensions="png,gif,jpeg,jpg" @imageuploaded="imageuploaded" @imagechanged="imagechanged" @imageuploading="imageuploading" :headers="csrf" :isXhr=true></vue-core-image-upload>
+                                    <vue-file-upload></vue-file-upload>
                                 </div>
                             </div>
                         </form>
@@ -99,7 +99,7 @@
 
     import Modal from '../../components/Modal.vue'
     import { show_stack_custom } from '../../vendor/notify'
-    import VueCoreImageUpload  from 'vue-core-image-upload';
+    import VueFileUpload from '../../components/VueFileUpload.vue'
 
     export default {
         data () {
@@ -114,7 +114,7 @@
         },
         components: {
             'modal': Modal,
-            'vue-core-image-upload': VueCoreImageUpload
+            'vue-file-upload': VueFileUpload
         },
         methods: {
             fetchTags () {
@@ -145,20 +145,6 @@
                     }
                     this.showModal = false
                 })
-            },
-
-            imageuploaded(res) {
-                console.log(res);
-            },
-
-            // return file object
-            imagechanged(res) {
-                console.log(res)
-            },
-
-            // uploading image
-            imageuploading(res) {
-                console.info('uploading');
             }
 
         },

@@ -2,34 +2,41 @@
 
 namespace App\Http\Controllers\Admin\Api;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use zgldh\QiniuStorage\QiniuStorage;
 class UploadController extends ApiController
 {
     //
     public function upload(Request $request)
     {
-        /**
-         * [2017-04-20 19:13:57] local.ALERT: array (
-        'files' =>
-        Illuminate\Http\UploadedFile::__set_state(array(
-        'test' => false,
-        'originalName' => 'QQ20170420-1@2x.png',
-        'mimeType' => 'application/octet-stream',
-        'size' => 0,
-        'error' => 1,
-        'hashName' => NULL,
-        )),
-        )
-         */
 
-        $disk = QiniuStorage::disk('qiniu');
-        $disk->downloadUrl('file.jpg');
+        if ($request->file('thumbnail')->getError() > 0) {
+            \Log::debug($request->file('thumbnail')->getError());
+            \Log::debug($request->file('thumbnail')->getErrorMessage());
+            return $this->responseWithErrorMsg('上传失败'.$request->file('thumbnail')->getError().'个错误'.'
+            '.$request->file('thumbnail')->getErrorMessage());
+        } else {
+             \Log::debug('文件符合规定,可以上传');
+            $disk = QiniuStorage::disk('qiniu');
+            $res = false;
+            $file = $request->file('thumbnail');
+            if ($request->hasFile('thumbnail')) {
+                $now = Carbon::now();
+                $timeStr = $now->format('YmdHis');
+                $name = $timeStr.'-'.$file->getClientOriginalName();
+                $content = file_get_contents($file->getRealPath());
+                $res = $disk->put($name, $content);
+            }
+            if ($res) {
+                $url = $disk->imagePreviewUrl($name, 'imageView2/0/w/350');
+                return $this->responseWithSuccessMsg($url);
+            }
+            return $this->responseWithErrorMsg('上传失败');
+        }
 
-//        $filename = Carbon::now()->toDateTimeString().'.'.$file->getClientOriginalExtension();
-//        \Log::alert($file->getClientOriginalExtension());
-        $file = $request->files;
-        \Log::debug($file->getClientOriginalExtension());
-        return $disk->imageInfo('file.jpg');
+
+
     }
 }

@@ -73,7 +73,7 @@
                                 <label class="control-label">缩略图</label>
                                 <div class="file-upload">
                                     <img :src="tag.thumbnail" alt="缩略图">
-                                    <vue-file-upload></vue-file-upload>
+                                    <vue-file-upload url="/api/v1/uploadFile" @uploaded="uploaded"></vue-file-upload>
                                 </div>
                             </div>
                         </form>
@@ -145,6 +145,15 @@
                     }
                     this.showModal = false
                 })
+            },
+
+            uploaded(data) {
+                if(data.status === 1) {
+                    this.tag.thumbnail = data.message
+                } else  {
+                    show_stack_custom('error', data.message)
+                }
+
             }
 
         },

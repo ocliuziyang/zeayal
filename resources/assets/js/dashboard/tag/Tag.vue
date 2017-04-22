@@ -5,6 +5,8 @@
         height: auto;
         margin-bottom: 15px;
     }
+    
+
 
 </style>
 <template>
@@ -33,7 +35,7 @@
                                         <div class="tools tools-bottom">
                                             <a href="#"><i class="fa fa-link"></i></a>
                                             <a href="javascript:;" @click="showEditTagModal(tag.id)"><i class="fa fa-pencil"></i></a>
-                                            <a href="#"><i class="fa fa-times"></i></a>
+                                            <a href="javascript:;" @click="deleteTag(tag.id)"><i class="fa fa-times"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -45,7 +47,7 @@
                     </div>
 
                     <!--编辑分类模态框-->
-                    <modal v-if="showModal" @close="showModal=false" modal-style='modal-md'>
+                    <modal v-if="showModal" @close="showModal=false">
 
                         <h3 slot="header">编辑分类</h3>
 
@@ -73,7 +75,7 @@
                                 <label class="control-label">缩略图</label>
                                 <div class="file-upload">
                                     <img :src="tag.thumbnail" alt="缩略图">
-                                    <vue-core-image-upload :class="['pure-button','pure-button-primary','js-btn-crop']" :crop="false" url="/api/v1/uploadFile" extensions="png,gif,jpeg,jpg" @imageuploaded="imageuploaded" @imagechanged="imagechanged" @imageuploading="imageuploading" :headers="csrf" :isXhr=true></vue-core-image-upload>
+                                    <vue-file-upload url="/api/v1/uploadFile" @uploadStart="uploadStart" @uploaded="uploaded" @uploadFailed="uploadFailed"></vue-file-upload>
                                 </div>
                             </div>
                         </form>
@@ -99,8 +101,8 @@
 
     import Modal from '../../components/Modal.vue'
     import { show_stack_custom } from '../../vendor/notify'
-    import VueCoreImageUpload  from 'vue-core-image-upload';
-
+    import VueFileUpload from '../../components/VueFileUpload.vue'
+    import NProgress from 'nprogress'
     export default {
         data () {
             return {
@@ -114,7 +116,7 @@
         },
         components: {
             'modal': Modal,
-            'vue-core-image-upload': VueCoreImageUpload
+            'vue-file-upload': VueFileUpload
         },
         methods: {
             fetchTags () {
@@ -147,18 +149,39 @@
                 })
             },
 
-            imageuploaded(res) {
-                console.log(res);
+            deleteTag (id) {
+              axios.delete('tags/'+id).then(response => {
+
+                  if (response.data.status === 1) {
+                      show_stack_custom('success', response.data.message)
+                  } else  {
+                      show_stack_custom('notice', response.data.message)
+                  }
+              })
             },
 
-            // return file object
-            imagechanged(res) {
-                console.log(res)
+            // 文件上传
+            uploadStart () {
+                NProgress.start()
             },
 
-            // uploading image
-            imageuploading(res) {
-                console.info('uploading');
+            uploaded (data) {
+                if(data.status === 1) {
+                    this.tag.thumbnail = data.message + '?imageView2/0/w/350'
+                    show_stack_custom('success', '上传成功')
+                } else  {
+                    show_stack_custom('error', data.message)
+                }
+                NProgress.done()
+            },
+
+            uploadFailed (error) {
+                if (error.status === 500) {
+                    show_stack_custom('error', '上传图片应该小于10M')
+                } else  {
+                    show_stack_custom('error', '上传失败')
+                }
+                NProgress.done()
             }
 
         },

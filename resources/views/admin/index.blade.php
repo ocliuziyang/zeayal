@@ -23,6 +23,7 @@
 
 
     <script src="{{ asset('js/app_all.js') }}"></script>
+
     {{--<script src="{{ asset('js/pnotify.custom.min.js') }}"></script>--}}
 
 </body>

@@ -74,19 +74,16 @@ class TagController extends ApiController
     public function update(Request $request, $id)
     {
         /**
-         *[2017-04-20 11:33:29] local.INFO: 1
-         * [2017-04-20 11:33:29] local.INFO: array (
-         * '_method' => 'put',
-         * 'tag' =>
-         * array (
-         * 'id' => 1,
-         * 'fid' => 0,
-         * 'name' => '人世间',
-         * 'description' => '世间事，人世间。',
-         * 'thumbnail' => '/images/tag_default.gif',
-         * 'created_at' => '2017-04-19 07:32:39',
-         * 'updated_at' => '2017-04-19 07:32:39',
-         * ),
+        [2017-04-21 20:08:54] local.DEBUG: array (
+        'id' => 2,
+        'fid' => 0,
+        'name' => '技术',
+        'description' => 'technology',
+        'thumbnail' => 'http://ocehld7p7.bkt.clouddn.com/20170421200852-QQ20170421-2@2x.png?imageView2/0/w/350',
+        'created_at' => '2017-04-19 07:32:39',
+        'updated_at' => '2017-04-20 15:26:34',
+        )
+        )
          * )
          */
         $res = Tag::whereId($id)->first()->update($request['tag']);
@@ -106,5 +103,18 @@ class TagController extends ApiController
     public function destroy($id)
     {
         //
+        $tag = Tag::find($id);
+
+        if ($tag->posts()->count() == 0) {
+            if (Tag::destroy($id) > 0) {
+                return $this->responseWithSuccessMsg('删除成功');
+            } else {
+                return $this->responseWithSuccessMsg('删除失败');
+            }
+        } else {
+            return $this->responseWithErrorMsg('分类下仍有文章，不能删除!');
+        }
+
+
     }
 }

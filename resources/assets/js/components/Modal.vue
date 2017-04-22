@@ -18,7 +18,7 @@
     }
 
     .modal-container {
-        width: 300px;
+        width: inherit;
         margin: 0 auto;
         padding: 10px 30px;
         background-color: #FFF;
@@ -39,6 +39,16 @@
     }
     p {
         text-align: left;
+    }
+
+
+    @media screen and (max-width: 480px) {
+        .modal-md {
+            min-width: 80%;
+        }
+        .modal-sm {
+            width: 70%;
+        }
     }
 
 </style>
@@ -81,7 +91,7 @@
         props: {
             modalStyle: {
                 type: String,
-                default: 'modal-sm'
+                default: 'modal-md'
             }
         }
     }

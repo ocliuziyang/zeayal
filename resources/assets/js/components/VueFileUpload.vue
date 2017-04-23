@@ -28,13 +28,13 @@
 
             accept: {
                 type: String,
-                default: 'image/*'
+                default: "image/png, image/jpeg, image/jpg, image/gif"
             }
         },
         methods: {
             upload () {
                 var myfiles = window.document.getElementsByName('file')[0].files
-
+                console.log('upload')
                 if (myfiles.length > 0) {
                     var formData = new FormData()
                     formData.append('thumbnail', myfiles[0])
@@ -74,6 +74,10 @@
                 }
 
 
+            },
+
+            verifyFileType (file) {
+                var myfiles = window.document.getElementsByName('file')[0].files
             }
         }
     }

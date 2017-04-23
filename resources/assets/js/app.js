@@ -12,6 +12,7 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
 import Vuex from 'vuex'
 Vue.use(Vuex)
 const store = new Vuex.Store({

@@ -24,7 +24,8 @@
     "gulp": "^3.9.1",
     "nprogress": "^0.2.0",
     "pnotify": "^3.0.0",
-    "vue-core-image-upload": "^2.0.13",
+    "startbootstrap-clean-blog": "^1.0.0",
+    "sweetalert2": "^6.6.0",
     "vue-router": "^2.4.0",
     "vuex": "^2.3.0"
   }

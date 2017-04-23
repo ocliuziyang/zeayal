@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin\Api;
 
 use App\Models\Tag;
 use App\Transformers\TagTransformer;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class TagController extends ApiController
 {
@@ -37,7 +39,30 @@ class TagController extends ApiController
      */
     public function store(Request $request)
     {
-        //
+        // 获取 tag 数组
+        $tag = $request->get('tag');
+        // 验证 tag 是否完整
+        $validator = Validator::make($tag, [
+            'name' => 'required'
+        ]);
+        // 不完整返回错误信息
+        if ($validator->fails()) {
+            return $this->responseWithArray([
+                'status' => -1,
+                'errors' => $validator->errors()->all()
+            ]);
+        }
+
+        $model = Tag::create($tag);
+        if ($model instanceof Model) {
+            // 新建成功
+            return $this->responseWithSuccessMsg();
+        }
+
+        return $this->responseWithErrorMsg();
+
+
+
     }
 
     /**

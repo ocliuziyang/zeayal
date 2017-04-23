@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => '/'], function () {
+   Route::get('/', 'BlogController@index');
+   Route::get('/posts', 'BlogController@posts');
+   Route::get('/posts/{id}', 'BlogController@show');
+   Route::get('/about', 'BlogController@about');
+   Route::get('/contact', 'BlogController@contact');
+
 });
+
+
 
 Route::group(['prefix' => 'dashboard', 'namespace' => 'Admin'], function () {
 

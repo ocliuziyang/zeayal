@@ -4657,9 +4657,9 @@ supports-color@^3.1.0, supports-color@^3.1.1, supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-sweetalert2@^6.6.0:
-  version "6.6.0"
-  resolved "http://registry.npm.taobao.org/sweetalert2/download/sweetalert2-6.6.0.tgz#dd6c3d7dc42c94b352671ac4bb9e06785aba6b50"
+sweetalert2@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-6.6.1.tgz#7c48a4617dcd664dcd5fe7f81e6cc9ba272ab581"
 
 tapable@^0.2.5, tapable@~0.2.5:
   version "0.2.6"

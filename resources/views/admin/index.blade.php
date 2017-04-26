@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('website.info.title')  }}|管理页面</title>
-    <link rel="stylesheet" href="/css/app_all.css">
-    {{--<link rel="stylesheet" href="/css/pnotify.custom.min.css">--}}
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/vendor.css') }}">
 
 </head>
 <body class="nav-md">
@@ -22,9 +22,9 @@
     <div id="app"></div>
 
 
-    <script src="{{ asset('js/app_all.js') }}"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
+    <script src="{{ mix('/js/vendor.js') }}"></script>
 
-    {{--<script src="{{ asset('js/pnotify.custom.min.js') }}"></script>--}}
 
 </body>
 </html>

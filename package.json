@@ -25,7 +25,7 @@
     "nprogress": "^0.2.0",
     "pnotify": "^3.0.0",
     "startbootstrap-clean-blog": "^1.0.0",
-    "sweetalert2": "^6.6.0",
+    "sweetalert2": "^6.6.1",
     "vue-router": "^2.4.0",
     "vuex": "^2.3.0"
   }
